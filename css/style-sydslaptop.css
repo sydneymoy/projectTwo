@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    background: rgb(135,211,255);
+    background: linear-gradient(0deg, rgba(135,211,255,1) 0%, rgba(8,8,8,1) 100%);
+    margin-top: 300px;
+}
+
+.verse1 {
+    font-family: 'Kalam', serif;
+    font-size: 40px;
+    color:#ffffff
+}
+
+a{
+    text-decoration: none;
+}
+
+.sleep {
+    display: inline-block;
+    color: #ffffff;
+    animation: sleepwave 3s infinite ease-in-out;
+
+}
+
+
+@keyframes sleepwave {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(90px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}

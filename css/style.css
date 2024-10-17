@@ -9,24 +9,64 @@ html, body {
 }
 
 body {
+    letter-spacing: 0.3em;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    min-height: 100%;
-    background: rgb(135,211,255);
-    background: linear-gradient(0deg, rgba(135,211,255,1) 0%, rgba(8,8,8,1) 100%);
-    margin-top: 300px;
+    min-height: 100vh;
+    background: #486b80;
+    background: linear-gradient(0deg, rgba(72,107,128,1) 0%, rgba(8,8,8,1) 100%);
 }
 
 .verse1 {
     font-family: 'Kalam', serif;
     font-size: 40px;
-    color:#ffffff
+    color:#ffffff;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
+
+.fade {
+    animation: fade 3s ease-in-out infinite;
+    opacity: 0.5;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* for this shake i used David Ugale's animation shake from 
+"Daya Web - CSS Text Animation: Shake" */
+.shake {
+    display: inline-block;
+    animation: shake 0.3s linear infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    
+}
+
 
 .sleep {
     display: inline-block;
@@ -49,4 +89,41 @@ a {
         transform: translateY(0);
     }
 
+}
+
+.night {
+    display: inline-block;
+    position: relative;
+    animation: twinkle 6s ease-in-out infinite;
+    font-size: 80px;
+    text-shadow: 00 10px white, 0 0 20px white, 0 0 30px white;
+}
+
+/* for this animation i used 
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateY to use as ref */
+
+
+@keyframes twinkle {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+        letter-spacing: 0;
+        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-150px);
+        letter-spacing: 5px;
+        text-shadow: 0 0 15px white, 0 0 25px white, 0 0 35px white,
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-210px);
+        letter-spacing: 10px;
+        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+    
+    }
 }
