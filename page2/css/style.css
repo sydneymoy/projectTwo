@@ -1,11 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
+     overflow: hidden; /* website called "stack overflow" had a discussion post on how to disable scroll effect. */
 }
 
 body {
@@ -15,7 +15,7 @@ body {
     min-height: 100%;
     font-family: 'Kalam', serif;
     font-size: 40px;
-    background: rgb(72,107,128);
+    background: #486b80;
     background: linear-gradient(0deg, rgba(72,107,128,1) 0%, rgba(39,57,68,1) 100%);
     margin-top: 300px;
 }
@@ -28,5 +28,115 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+/* i learned about translateX from mdn web docs module @keyframes. they talked about
+starting offset and ending offset percentages. this helped me play around with the text animation
+coming in from the left*/
+.shoot-in {
+    display: inline-block;
+    opacity: 0; 
+    transform: translateX(-600%);
+    animation: shoot-in 3s forwards;
+    
+}
+
+@keyframes shoot-in {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.feeling {
+    position: absolute;
+    font-size: 80px;
+    top: 350px;
+    right:auto;
+    display: inline-flex; 
+    text-shadow: 0 0 10px rgba(255, 115, 56, 0.8); 
+    opacity: 0;
+    animation: fadeinscale 2.2s forwards;
+    animation-delay: 2s;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+@keyframes fadeinscale {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+}
+
+.letterF { animation: wave 1s infinite; }
+.letterE1 { animation: wave 1s infinite 0.1s; } 
+.letterE2 { animation: wave 1s infinite 0.2s; }
+.letterL { animation: wave 1s infinite 0.3s; }
+.letterI { animation: wave 1s infinite 0.4s; }
+.letterN { animation: wave 1s infinite 0.5s; }
+.letterG { animation: wave 1s infinite 0.6s; }
+
+
+.scaleisland {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%, -20%);
+    opacity: 0;
+    animation: fadeinback 2.2s forwards;
+    animation-delay: 4s;
+    color: white;
+
+}
+
+@keyframes fadeinback {
+    0% {
+        opacity: 0;
+        transform: translateX(70px) rotate(45deg) scale(0);
+    }
+    50% {
+        opacity: 0.4;
+        transform: translateX(20px) rotate(15deg) scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotate(6deg) scale(3);
+    }
+}
+
+.small-text {
+    font-size: 30px;
+    animation: fadeintext 2.2s forwards;
+    animation-delay: 4s;
+}
+
+.large-text {
+    font-size: 60px;
+    color: #4b7945;
 }
