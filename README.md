@@ -3,7 +3,7 @@
 
 # project overview
 For Project Two, we will style words in motion using only animation. Select lyrics or a quote that reflects the concept of your idea on what community means.
-Use interaction techniques (hover, transformations, animations, and color). Having a creative approach with typography and design.
+Use interaction techniques (hover, transformations, animations, and color). Have a creative approach with typography and design.
 
 
 # technical overview
