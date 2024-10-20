@@ -50,6 +50,9 @@ a {
 .shake {
     display: inline-block;
     animation: shake 0.3s linear infinite;
+    font-weight: bold;
+    font-size: 80px;
+    text-shadow: #ffffff;
 }
 
 @keyframes shake {

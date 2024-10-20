@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html, body {
@@ -15,10 +14,101 @@ body {
     min-height: 100%;
     font-family: 'Kalam', serif;
     font-size: 40px;
-    background-image: linear-gradient( 89.5deg,  rgba(131,204,255,1) 0.4%, rgba(66,144,251,1) 100.3% );
-    margin-top: 300px;
+    background: #486b80;
+    background: linear-gradient(0deg, rgba(72,107,128,1) 0%, rgba(39,57,68,1) 100%);
+}
+
+.verse3 { display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Kalam', serif;
+    font-size: 40px;  
+    letter-spacing: 0.2em;
+    color:#ffffff;
 }
 
 a {
     text-decoration: none;
+}
+
+/* Tia Eastwood posted on dev.to called "Super Simple CSS animation for 'fade in.'"
+they helped broke down the code in a reading that i referenced off off.*/
+
+.fade-in {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: fadeineffect 2s forwards;
+}
+
+@keyframes fadeineffect {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* same code i used for page 1*/
+.shake {
+    display: inline-block;
+    animation: shake 0.3s linear infinite;
+    font-weight: bold;
+    font-size: 80px;
+    color: #ffb882;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff4500, 0 0 20px #ff4500, 0 0 25px #ff6347;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    
+}
+
+/* on project 2, from past student examples i noteiced kimberley's page 4 help give me inspo for the drop down animation. 
+the second inspo i got was the blur effect i found online. they had cool layers of text shadow to create the 
+blur effect. in this case i wanted the word to be legible so instead i simplified it and created just a solid white color 
+with a 0 opacity when you hover it. */
+
+.disappear {
+    position: relative;
+    color: transparent;
+    font-weight: bold;
+    color: white;
+   transition: opacity 1s ease, text-shadow 1s ease;
+   animation: dropdown 3s forwards
+}
+
+.disappear:hover {
+    opacity: 0;
+    text-shadow: none;
+}
+
+@keyframes dropdown {
+    0% {
+        top: 0px;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        top: 10px;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        top: 250px;
+        text-shadow: 0px 0px 20px white; 
+    }
 }
