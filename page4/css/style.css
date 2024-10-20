@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html, body {
@@ -15,10 +14,15 @@ body {
     min-height: 100%;
     font-family: 'Kalam', serif;
     font-size: 40px;
-    background-image: linear-gradient( 89.5deg,  rgba(131,204,255,1) 0.4%, rgba(66,144,251,1) 100.3% );
-    margin-top: 300px;
+    background: #486b80;
+    background: linear-gradient(0deg, rgba(72,107,128,1) 0%, rgba(39,57,68,1) 100%);
 }
 
 a {
     text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.verse4 {
+    
 }
