@@ -2,9 +2,7 @@
 
 
 # project overview
-For Project Two, we will style words in motion using only animation. Select lyrics or a quote that reflects the concept of your idea on what community means.
-Use interaction techniques (hover, transformations, animations, and color). Have a creative approach with typography and design.
-
+For Project Two, I selected the song Camden by Gracie Abrams. This song reflects a concept of community that reassures people they aren’t alone in their struggles and that their pain is seen, even when they’re trying to hide it. It speaks to the importance of not facing challenges in isolation and finding connections that make you feel truly understood. To me, community is about discovering a sense of belonging, and this song captures that feeling perfectly. It highlights the importance of communities as places where people can openly share their stories, be heard with genuine curiosity, and build meaningful connections in a supportive, safe space.
 
 # technical overview
 - HTML: Structuring lyrics and emphasis on individual words
