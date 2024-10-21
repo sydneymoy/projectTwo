@@ -97,6 +97,7 @@ coming in from the left (fix) */
 }
 
 .large-text {
+    color: green;
     font-size: 95px;
     font-weight: bold;
     opacity: 0;
@@ -106,7 +107,7 @@ coming in from the left (fix) */
 }
 
 .large-text:hover {
-    color: green;
+    color: rgb(51, 171, 222);
 }
 
 @keyframes drop {

@@ -60,8 +60,8 @@ they helped broke down the code in a reading that i referenced off off.*/
     animation: shake 0.3s linear infinite;
     font-weight: bold;
     font-size: 80px;
-    color: #ffb882;
-    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff4500, 0 0 20px #ff4500, 0 0 25px #ff6347;
+    color: #ffffff;
+    text-shadow: 0 0 5px #eb8a45, 0 0 10px #eb8a45, 0 0 15px #eb8a45, 0 0 20px #eb8a45, 0 0 25px #eb8a45;
 }
 
 @keyframes shake {

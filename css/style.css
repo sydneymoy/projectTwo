@@ -97,7 +97,7 @@ a {
 .night {
     display: inline-block;
     position: relative;
-    animation: twinkle 6s ease-in-out infinite;
+    animation: twinkle 6s ease-in-out forwards;
     font-size: 80px;
     text-shadow: 00 10px white, 0 0 20px white, 0 0 30px white;
 }
