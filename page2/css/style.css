@@ -61,33 +61,7 @@ coming in from the left (fix) */
 .text-container {
     display: flex;
     align-items: center;
-    gap: 20px;
-}
-.feeling {
-    display: inline-block;
-    font-size: 80px;
-    color: white;
-    font-weight: bold;
-    animation: pulse 1s infinite;
-}
-
-.feeling:hover {
-    color: #f43939;
-    animation: heartbeat 1s infinite;
-}
-
-@keyframes heartbeat {
-    0%, 100% {
-        transform: scale(1);
-
-    }
-    50% {
-        transform: scale(2);
-    }
-}
-
-.small text {
-    font-size: 40px;
+    gap: 30px;
 }
 
 .scaleisland {

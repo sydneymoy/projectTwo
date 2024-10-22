@@ -54,14 +54,14 @@ they helped broke down the code in a reading that i referenced off off.*/
     }
 }
 
-/* same code i used for page 1*/
+/* for this shake i used David Ugale's animation shake from 
+"Daya Web - CSS Text Animation: Shake" */
 .shake {
     display: inline-block;
     animation: shake 0.3s linear infinite;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 50px;
     color: #ffffff;
-    text-shadow: 0 0 5px #eb8a45, 0 0 10px #eb8a45, 0 0 15px #eb8a45, 0 0 20px #eb8a45, 0 0 25px #eb8a45;
 }
 
 @keyframes shake {
@@ -88,7 +88,7 @@ with a 0 opacity when you hover it. */
     position: relative;
     color: transparent;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
    transition: opacity 1s ease, text-shadow 1s ease;
    animation: dropdown 3s forwards
 }
