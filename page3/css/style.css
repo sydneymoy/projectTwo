@@ -60,7 +60,6 @@ they helped broke down the code in a reading that i referenced off off.*/
     display: inline-block;
     animation: shake 0.3s linear infinite;
     font-weight: bold;
-    font-size: 50px;
     color: #ffffff;
 }
 
@@ -88,6 +87,7 @@ with a 0 opacity when you hover it. */
     position: relative;
     color: transparent;
     font-weight: bold;
+    font-size: 50PX;
     color: rgb(0, 0, 0);
    transition: opacity 1s ease, text-shadow 1s ease;
    animation: dropdown 3s forwards

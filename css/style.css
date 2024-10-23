@@ -16,7 +16,7 @@ body {
     width: 100%;
     min-height: 100vh;
     background: #486b80;
-    background: linear-gradient(0deg, rgba(72,107,128,1) 0%, rgba(39,57,68,1) 100%);
+    background: linear-gradient(0deg, rgba(72,107,128,1) 0%, rgba(39,57,68,1) 100%); /*designed by alex siorta on css gradient generators*/
 }
 
 .verse1 {
