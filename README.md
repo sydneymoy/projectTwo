@@ -14,16 +14,22 @@ I would like to acknowledge the following sources for their helpful coding tips.
 
 -[CSS Gradient Generator](https://cssgradient.io/) designed by Alex Siorta
 
-- [Google Fonts: Kalam](https://fonts.google.com/specimen/Kalam) designed by Indian Type Foundry
+-[Google Fonts: Kalam](https://fonts.google.com/specimen/Kalam) designed by Indian Type Foundry
 
-- [W3Schools: How to Create Roound Buttons](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons) Referenced for creating round buttons on page 6.
+-[CSS-Tricks Animation](https://css-tricks.com/almanac/properties/a/animation/) written by Ryan Trimble
 
-- [GeeksforGeeks: Vertical Wavy Text Line](https://www.geeksforgeeks.org/how-to-make-a-vertical-wavy-text-line-using-html-and-css/) – Used for implementing wavy text on the index page.
+-[Fade In CSS Animation](https://dev.to/tiaeastwood/super-simple-css-animation-for-fade-in-on-page-load-2p8m) written by Tia Eastwood
 
-- [MDN Web Docs: translateY Transform Function](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateY)– Referenced for creating a rising text effect for the word "night."
+-[Dropping Text Animation](https://www.winterwind.com/tutorials/css/38) site owned by Anthony Vipond
 
-- [Animista](https://animista.net/play/basic/shadow-pop) Designed by Ana Travas
-- 
+-[CSS Animations](https://www.w3schools.com/css/css3_animations.asp) developed by the World Wide Web Consortium (W3C)
+
+-[Blinking Neon Sign](https://codepen.io/DevchamploO/pen/NBWBGq) by Tiffany Grevious
+
+-[MDN Web Docs: translateY Transform Function](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateY)– Referenced for creating a rising text effect for the word "night."
+
+-[Animista](https://animista.net/play/basic/shadow-pop) Designed by Ana Travas
+
 
 
 

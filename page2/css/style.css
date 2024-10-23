@@ -34,9 +34,7 @@ a {
     color: rgb(255, 255, 255);
 }
 
-/* i learned about translateX from mdn web docs module @keyframes. they talked about
-starting offset and ending offset percentages. this helped me play around with the text animation
-coming in from the left (fix) */
+/*ryan trimble offered great tips and guides on CSS-Tricks. they explain animation properties and timing that i needed for this pg.*/
 .shoot-in {
     display: block;
     animation-name: shootIn;

@@ -33,8 +33,7 @@ a {
     text-decoration: none;
 }
 
-/* Tia Eastwood posted on dev.to called "Super Simple CSS animation for 'fade in.'"
-they helped broke down the code in a reading that i referenced off off.*/
+/* Tia Eastwood posted on dev.to called "Super Simple CSS animation for 'fade in.'"*/
 
 .fade-in {
     display: inline-block;
@@ -78,7 +77,7 @@ they helped broke down the code in a reading that i referenced off off.*/
     
 }
 
-/* on project 2, from past student examples i noteiced kimberley's page 4 help give me inspo for the drop down animation. 
+/* on project 2, from past student examples i noticed kimberley's page 4 help give me inspo for the drop down animation. 
 the second inspo i got was the blur effect i found online. they had cool layers of text shadow to create the 
 blur effect. in this case i wanted the word to be legible so instead i simplified it and created just a solid white color 
 with a 0 opacity when you hover it. */
